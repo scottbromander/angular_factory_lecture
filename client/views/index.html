@@ -9,13 +9,19 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
-    <div ng-controller="BaseController">
+    <header ng-include="'/assets/views/templates/header.html'"></header>
 
-    </div>
+    <header ng-include="'/assets/views/templates/nav.html'"></header>
+
+    <main ng-view></main>
+
+    <header ng-include="'/assets/views/templates/footer.html'"></header>
 
     <!--SCRIPTS-->
     <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/factories/data.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/controllers/controller.min.js"></script>
 </body>
 </html>
